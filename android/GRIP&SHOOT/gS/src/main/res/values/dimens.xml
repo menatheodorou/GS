@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Common -->
+    <dimen name="common_padding_small0">2dp</dimen>
+    <dimen name="common_padding_small1">5dp</dimen>
+    <dimen name="common_reverse_padding_small1">-5dp</dimen>
+    <dimen name="common_padding_small2">10dp</dimen>
+    <dimen name="common_reverse_padding_small2">-10dp</dimen>
+    <dimen name="common_padding_medium">15dp</dimen>
+    <dimen name="common_padding_medium1">20dp</dimen>
+    <dimen name="common_reverse_padding_medium1">-20dp</dimen>
+    <dimen name="common_padding_medium2">25dp</dimen>
+    <dimen name="common_padding_large">30dp</dimen>
+    
+    <!-- Focus -->
+    <dimen name="camera_focus_range">80dp</dimen>
+    
+</resources>

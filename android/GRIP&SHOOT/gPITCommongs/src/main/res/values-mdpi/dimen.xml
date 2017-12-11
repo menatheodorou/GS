@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- Common -->
+	<dimen name="popup_margin_small">15dp</dimen>
+    <dimen name="popup_margin">35dp</dimen>
+    <dimen name="popup_margin_medium">30dp</dimen>
+    <dimen name="popup_margin_large">50dp</dimen>
+    <dimen name="popup_margin_largest">110dp</dimen>
+    <dimen name="popup_margin_lateral">30dp</dimen>    
+    <dimen name="small_margin">20dp</dimen>
+
+</resources>

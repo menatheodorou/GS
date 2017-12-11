@@ -1,0 +1,1084 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>EMMockDevice Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		
+		<div id="em-wrapper">
+			<style>
+				#utility_bar
+				{
+					position: relative;
+					height: 35px;
+					/*background: #231f20 url(../images/bg_tagline.png) no-repeat right
+					center;*/
+					background: #231f20 url(http://www.emmoco.com/images/bg_tagline.png) no-repeat right center;
+					color: #efefef;
+					overflow: hidden;
+					padding-left: 10px;
+				}
+
+				#utility_bar p
+				{
+					margin-top: 9px;
+					margin-bottom: 0;
+				}
+
+				#utility_bar a
+				{
+					color: #efefef;
+					margin-right: 15px;
+					padding: 2px;
+				}
+
+				#utility_bar a:hover
+				{
+					color: #fff;
+				}
+
+				#utility_bar a.selected
+				{
+					text-decoration: none;
+					background-color: #555;
+				}
+			</style>
+			<!-- begin utility bar -->
+			<div id="utility_bar">
+
+				<!-- user info / logout link -->
+				<p>
+					<a href="http://em-hub.com/">Em-Hub</a>
+					<a href="http://wiki.emmoco.com/">Wiki</a>
+					<a href="http://android.emmoco.com/">Android Docs</a>
+					<a class="selected" href="http://ios.emmoco.com/">iOS Docs</a>
+          <a href="http://support.emmoco.com/">Support</a>
+				</p>
+
+			</div>
+			<!-- end utility bar -->
+		
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iOS Framework </a></h1>
+				<a id="developerHome" href="../index.html">Emmoco, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">EMMockDevice Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/connectionDelayTime">&nbsp;&nbsp;&nbsp;&nbsp;connectionDelayTime</option>
+	
+	<option value="//api/name/deviceName">&nbsp;&nbsp;&nbsp;&nbsp;deviceName</option>
+	
+	<option value="//api/name/mockDeviceDelegate">&nbsp;&nbsp;&nbsp;&nbsp;mockDeviceDelegate</option>
+	
+	<option value="//api/name/schema">&nbsp;&nbsp;&nbsp;&nbsp;schema</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addHandler:forResourceNamed:accessOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- addHandler:forResourceNamed:accessOperation:</option>
+	
+	<option value="//api/name/closeConnection">&nbsp;&nbsp;&nbsp;&nbsp;- closeConnection</option>
+	
+	<option value="//api/name/executeBlock:withDelay:repeats:">&nbsp;&nbsp;&nbsp;&nbsp;- executeBlock:withDelay:repeats:</option>
+	
+	<option value="//api/name/initWithSchemaNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSchemaNamed:</option>
+	
+	<option value="//api/name/openConnection">&nbsp;&nbsp;&nbsp;&nbsp;- openConnection</option>
+	
+	<option value="//api/name/propertyMapping">&nbsp;&nbsp;&nbsp;&nbsp;- propertyMapping</option>
+	
+	<option value="//api/name/readResourceNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- readResourceNamed:</option>
+	
+	<option value="//api/name/simulateConnectionInterrupt">&nbsp;&nbsp;&nbsp;&nbsp;- simulateConnectionInterrupt</option>
+	
+	<option value="//api/name/writeValue:">&nbsp;&nbsp;&nbsp;&nbsp;- writeValue:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDelayTime">connectionDelayTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceName">deviceName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mockDeviceDelegate">mockDeviceDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/schema">schema</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addHandler:forResourceNamed:accessOperation:">addHandler:forResourceNamed:accessOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeConnection">closeConnection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeBlock:withDelay:repeats:">executeBlock:withDelay:repeats:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSchemaNamed:">initWithSchemaNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openConnection">openConnection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyMapping">propertyMapping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readResourceNamed:">readResourceNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/simulateConnectionInterrupt">simulateConnectionInterrupt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeValue:">writeValue:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="EMMockDevice Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">EMMockDevice Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">EMMockDevice.h<br />EMMockDevice.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Mock devices are software simlulated versions of embedded systems.
+Given an instance of <a href="../Classes/EMSchema.html">EMSchema</a>, mock devices can simulate just about any real-world embedded device.
+Your application can assume the mock device and any real world embedded system with the same <a href="#//api/name/schema">schema</a> to be identical.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/schema">&nbsp;&nbsp;schema</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/schema">schema</a> associated with the mock device.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceName">&nbsp;&nbsp;deviceName</a></code>
+		<span class="tooltip"><p>A name for the device.  This will ultimately be used as the -name property in this Mock devices <a href="../Classes/EMDeviceBasicDescription.html">EMDeviceBasicDescription</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mockDeviceDelegate">&nbsp;&nbsp;mockDeviceDelegate</a></code>
+		<span class="tooltip"><p>The delegate to which indicators are sent.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDelayTime">&nbsp;&nbsp;connectionDelayTime</a></code>
+		<span class="tooltip"><p>Time to delay before connection occurs
+Use this resource for real-life condition simulation</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSchemaNamed:">&ndash;&nbsp;initWithSchemaNamed:</a></code>
+		<span class="tooltip"><p>This is the default initializer of all <a href="EMMockDevice.html">EMMockDevice</a> instances.  Pass the name of a <a href="#//api/name/schema">schema</a> in your application bundle and the mock device will be generated around that <a href="#//api/name/schema">schema</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addHandler:forResourceNamed:accessOperation:">&ndash;&nbsp;addHandler:forResourceNamed:accessOperation:</a></code>
+		<span class="tooltip"><p>Use this method to add custom behavior to <a href="EMMockDevice.html">EMMockDevice</a> subclasses.
+Instances of <a href="EMMockDevice.html">EMMockDevice</a> are generally naive.  They read, write, and indicate.  If you want to add behavior when certain properties are read or written, use this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeBlock:withDelay:repeats:">&ndash;&nbsp;executeBlock:withDelay:repeats:</a></code>
+		<span class="tooltip"><p>The block passed into this method will be executed at a time interval.
+Use this method to add internal mock device checks, build in time based behavior, or run checks on state.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openConnection">&ndash;&nbsp;openConnection</a></code>
+		<span class="tooltip"><p>Opens a connection to a mock device</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeConnection">&ndash;&nbsp;closeConnection</a></code>
+		<span class="tooltip"><p>Close connection to a mock device</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeValue:">&ndash;&nbsp;writeValue:</a></code>
+		<span class="tooltip"><p>Write a value to the mock device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readResourceNamed:">&ndash;&nbsp;readResourceNamed:</a></code>
+		<span class="tooltip"><p>Read a value from the mock device.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/simulateConnectionInterrupt">&ndash;&nbsp;simulateConnectionInterrupt</a></code>
+		<span class="tooltip"><p>Simulate a dropped connection from the mock device</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyMapping">&ndash;&nbsp;propertyMapping</a></code>
+		<span class="tooltip"><p>The internal mapping of all current resource values</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDelayTime" title="connectionDelayTime"></a>
+	<h3 class="subsubtitle method-title">connectionDelayTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Time to delay before connection occurs
+Use this resource for real-life condition simulation</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval connectionDelayTime</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Time to delay before connection occurs
+Use this resource for real-life condition simulation</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceName" title="deviceName"></a>
+	<h3 class="subsubtitle method-title">deviceName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A name for the device.  This will ultimately be used as the -name property in this Mock devices <a href="../Classes/EMDeviceBasicDescription.html">EMDeviceBasicDescription</a></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *deviceName</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A name for the device.  This will ultimately be used as the -name property in this Mock devices <a href="../Classes/EMDeviceBasicDescription.html">EMDeviceBasicDescription</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mockDeviceDelegate" title="mockDeviceDelegate"></a>
+	<h3 class="subsubtitle method-title">mockDeviceDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate to which indicators are sent.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) id&lt;EMMockDeviceDelegate&gt; mockDeviceDelegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate to which indicators are sent.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/schema" title="schema"></a>
+	<h3 class="subsubtitle method-title">schema</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/schema">schema</a> associated with the mock device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) EMSchema *schema</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/schema">schema</a> associated with the mock device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addHandler:forResourceNamed:accessOperation:" title="addHandler:forResourceNamed:accessOperation:"></a>
+	<h3 class="subsubtitle method-title">addHandler:forResourceNamed:accessOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this method to add custom behavior to <a href="EMMockDevice.html">EMMockDevice</a> subclasses.
+Instances of <a href="EMMockDevice.html">EMMockDevice</a> are generally naive.  They read, write, and indicate.  If you want to add behavior when certain properties are read or written, use this method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addHandler:(void ( ^ ) ( EMResourceValue *value ))<em>handler</em> forResourceNamed:(NSString *)<em>resourceName</em> accessOperation:(EMMockDeviceAccessOperation)<em>operation</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>A block to execute on on the given access operation</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resourceName</em></dt>
+			<dd><p>The name of the resource being accessed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p>The access operation that should trigger the handler on the given resource name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to add custom behavior to <a href="EMMockDevice.html">EMMockDevice</a> subclasses.
+Instances of <a href="EMMockDevice.html">EMMockDevice</a> are generally naive.  They read, write, and indicate.  If you want to add behavior when certain properties are read or written, use this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/closeConnection" title="closeConnection"></a>
+	<h3 class="subsubtitle method-title">closeConnection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Close connection to a mock device</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)closeConnection</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Close connection to a mock device</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeBlock:withDelay:repeats:" title="executeBlock:withDelay:repeats:"></a>
+	<h3 class="subsubtitle method-title">executeBlock:withDelay:repeats:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The block passed into this method will be executed at a time interval.
+Use this method to add internal mock device checks, build in time based behavior, or run checks on state.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)executeBlock:(void ( ^ ) ( void ))<em>block</em> withDelay:(NSTimeInterval)<em>delay</em> repeats:(BOOL)<em>repeats</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block to execute</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The delay before executing the block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>repeats</em></dt>
+			<dd><p>A flag indicating whether or not the block should continuously repeat</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The block passed into this method will be executed at a time interval.
+Use this method to add internal mock device checks, build in time based behavior, or run checks on state.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSchemaNamed:" title="initWithSchemaNamed:"></a>
+	<h3 class="subsubtitle method-title">initWithSchemaNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the default initializer of all <a href="EMMockDevice.html">EMMockDevice</a> instances.  Pass the name of a <a href="#//api/name/schema">schema</a> in your application bundle and the mock device will be generated around that <a href="#//api/name/schema">schema</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithSchemaNamed:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the <a href="#//api/name/schema">schema</a> &ndash; do not include a file extension.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the default initializer of all <a href="EMMockDevice.html">EMMockDevice</a> instances.  Pass the name of a <a href="#//api/name/schema">schema</a> in your application bundle and the mock device will be generated around that <a href="#//api/name/schema">schema</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openConnection" title="openConnection"></a>
+	<h3 class="subsubtitle method-title">openConnection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Opens a connection to a mock device</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)openConnection</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Opens a connection to a mock device</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyMapping" title="propertyMapping"></a>
+	<h3 class="subsubtitle method-title">propertyMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The internal mapping of all current resource values</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)propertyMapping</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The internal mapping of all current resource values</p>
+
+<p>Use this in subclasses of <a href="EMMockDevice.html">EMMockDevice</a> when overriding read or write behavior</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readResourceNamed:" title="readResourceNamed:"></a>
+	<h3 class="subsubtitle method-title">readResourceNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Read a value from the mock device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (EMResourceValue *)readResourceNamed:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the value to write</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Read a value from the mock device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/simulateConnectionInterrupt" title="simulateConnectionInterrupt"></a>
+	<h3 class="subsubtitle method-title">simulateConnectionInterrupt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Simulate a dropped connection from the mock device</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)simulateConnectionInterrupt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Simulate a dropped connection from the mock device</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeValue:" title="writeValue:"></a>
+	<h3 class="subsubtitle method-title">writeValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Write a value to the mock device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeValue:(EMResourceValue *)<em>value</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The value to write</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Write a value to the mock device.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EMMockDevice.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					
+					<style>
+						#em-footer
+						{
+							background-color: #fff;
+							height: 100px;
+							font-size: 90%;
+							overflow: hidden;
+						}
+
+						#em-footer_logo_container
+						{
+							position: relative;
+							background-color: #d2d2d2;
+							height: 70px;
+							margin-bottom: 3px;
+						}
+
+						#em-footer_logo_container a
+						{
+							position: absolute;
+							right: 7px;
+							top: 7px;
+						}
+
+					</style>
+
+					<!-- begin em-footer -->
+					<div id="em-footer">
+						<div id="em-footer_logo_container"><a href="http://www.emmoco.com/"><img
+								src="http://www.emmoco.com/images/logo_emhub_footer.png"
+								alt="" width="85" height="57" alt="EMMOCO LOGO" /></a></div>
+					</div>
+					
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Emmoco, Inc.. All rights reserved. (Last updated: 2012-12-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

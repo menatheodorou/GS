@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_ar_names">
+        <item>@string/ar_1_1</item>
+        <item>@string/ar_4_3</item>
+        <item>@string/ar_16_9</item>
+    </string-array>
+    
+    <string-array name="image_ar_values">
+        <item>@string/ar_1_1</item>
+        <item>@string/ar_4_3</item>
+        <item>@string/ar_16_9</item>
+    </string-array>
+</resources>

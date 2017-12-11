@@ -1,0 +1,35 @@
+version = "1.0.0"
+description = ""
+
+schema GripAndShoot {
+
+    /* ======== TYPES ======== */
+    
+    enum ButtonState {
+        RELEASED, PRESSED
+    }
+    
+    typedef num <0.1, 2.0, 0.100> Delay
+    struct Hold {
+        Delay holdDelay
+        Delay repeatDelay
+    }
+    /* ======== RESOURCES ======== */
+    ButtonState pictureButton {
+        indicator
+        readonly
+    }
+
+    Hold pictureHold
+
+    ButtonState zoomInButton {
+        indicator
+        readonly
+    }
+
+    ButtonState zoomOutButton {
+        indicator
+        readonly
+    }
+
+}

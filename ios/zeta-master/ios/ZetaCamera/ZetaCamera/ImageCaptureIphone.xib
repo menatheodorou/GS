@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="28" id="33"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <customObject id="28" customClass="AppDelegate">
+            <connections>
+                <outlet property="vc" destination="26" id="46"/>
+                <outlet property="window" destination="30" id="31"/>
+            </connections>
+        </customObject>
+        <window opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="30">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="rootViewController" destination="26" id="113"/>
+            </connections>
+        </window>
+        <viewController id="26" customClass="ImageCaptureViewController">
+            <view key="view" contentMode="scaleToFill" id="3" userLabel="MainView">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" id="5" userLabel="CameraView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="GJV-0Z-ypb">
+                                <rect key="frame" x="0.0" y="70" width="320" height="428"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="szw-eK-gvR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="60" customClass="GPUImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vgM-tS-rbR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="428"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="63">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NHd-rY-Vhj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="15" userLabel="Flash">
+                                        <rect key="frame" x="16" y="11" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="flash_auto.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="flash_auto_selected.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="flashSwitch:" destination="26" eventType="touchUpInside" id="pQs-fh-eHD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="72">
+                                        <rect key="frame" x="182" y="11" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="video_mode.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="photo_mode_selected.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchVideo:" destination="26" eventType="touchUpInside" id="73"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14" userLabel="Switch">
+                                        <rect key="frame" x="257" y="18" width="48" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="switch_camera_btn.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="switch_camera_btn_selected.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraSwitch:" destination="26" eventType="touchUpInside" id="rub-b9-cS3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PgC-xr-q85">
+                                        <rect key="frame" x="90" y="11" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="setting_btn.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="setting_btn_selected.png"/>
+                                        <state key="highlighted" backgroundImage="setting_btn_selected.png"/>
+                                        <connections>
+                                            <action selector="tapSetting:" destination="26" eventType="touchUpInside" id="GIc-tQ-jLe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="XSd-TR-ClV">
+                                <rect key="frame" x="0.0" y="498" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zSR-tC-RE9">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="13" userLabel="Capture">
+                                        <rect key="frame" x="136" y="11" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="capture_btn.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="capture_btn_selected.png"/>
+                                        <state key="highlighted" image="capture_btn_selected.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="26" eventType="touchUpInside" id="35"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mvI-Nh-K8v">
+                                        <rect key="frame" x="13" y="13" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="family.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="photoLibraryPressed:" destination="26" eventType="touchUpInside" id="xCp-K2-esU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="53">
+                                        <rect key="frame" x="258" y="11" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="gs_logo.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="gs_logo_selected.png"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deviceButtonPressed:" destination="26" eventType="touchUpInside" id="xKw-jt-RhT"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="47" userLabel="Time label">
+                                        <rect key="frame" x="197" y="22" width="48" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.47764765469999998" green="0.98913043479999996" blue="0.29608148699999998" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="58" userLabel="Shutter View">
+                                <rect key="frame" x="0.0" y="70" width="320" height="430"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" id="zb5-lw-P8l">
+                                <rect key="frame" x="0.0" y="70" width="154" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="mD8-of-7ls">
+                                <rect key="frame" x="143" y="464" width="177" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BTi-WD-nwU">
+                                        <rect key="frame" x="10" y="4" width="15" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="geotag_icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="geotag_icon_selected.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="24X-8A-2KU">
+                                        <rect key="frame" x="35" y="0.0" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="SCN">
+                                            <color key="titleColor" red="1" green="0.082997468670000005" blue="0.03581980697" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KT9-ud-fbs">
+                                        <rect key="frame" x="89" y="0.0" width="83" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="256.35 GB">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TMm-l4-Nc5" appends="YES" id="VSv-5B-87O"/>
+                            <outletCollection property="gestureRecognizers" destination="Pb7-eo-4Sh" appends="YES" id="2Vi-t9-AgH"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.13725490200000001" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                <gestureRecognizers/>
+                <connections>
+                    <outletCollection property="gestureRecognizers" destination="TMm-l4-Nc5" appends="YES" id="b7w-IU-LjT"/>
+                </connections>
+            </view>
+            <extendedEdge key="edgesForExtendedLayout"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="_bottomBar" destination="XSd-TR-ClV" id="3jC-48-Vza"/>
+                <outlet property="_bottombarBackgroundView" destination="zSR-tC-RE9" id="25d-kh-OGA"/>
+                <outlet property="_cameraContainerView" destination="GJV-0Z-ypb" id="uZE-DJ-tMI"/>
+                <outlet property="_cameraRotateView" destination="szw-eK-gvR" id="aLK-6h-ceK"/>
+                <outlet property="_connectingImgView" destination="Y5S-xE-LlO" id="U2P-2L-eIB"/>
+                <outlet property="_deviceControlView" destination="Vch-Wl-1wi" id="i0t-Lc-mEW"/>
+                <outlet property="_devicePickerView" destination="114" id="120"/>
+                <outlet property="_geoButton" destination="BTi-WD-nwU" id="okV-by-JwE"/>
+                <outlet property="_gridBGView" destination="vgM-tS-rbR" id="t0V-wk-2bO"/>
+                <outlet property="_introImageView" destination="QeY-bT-HjR" id="SYo-pm-yGi"/>
+                <outlet property="_introView" destination="5oQ-jI-D5N" id="t3a-t2-nNa"/>
+                <outlet property="_logoButton" destination="n8g-RO-oKE" id="5kM-yo-5x4"/>
+                <outlet property="_scnButton" destination="24X-8A-2KU" id="ab2-dv-wlX"/>
+                <outlet property="_settingButton" destination="PgC-xr-q85" id="Mfc-yk-P5S"/>
+                <outlet property="_settingContainView" destination="zb5-lw-P8l" id="ugK-04-s16"/>
+                <outlet property="_shortcutView" destination="mD8-of-7ls" id="6l6-OX-1KB"/>
+                <outlet property="_skipConnectionButton" destination="BBY-ob-G66" id="LvP-a5-9ps"/>
+                <outlet property="_storageButton" destination="KT9-ud-fbs" id="oZe-ak-98s"/>
+                <outlet property="_switchModeButton" destination="72" id="80"/>
+                <outlet property="_table" destination="116" id="121"/>
+                <outlet property="_topButtonsBarView" destination="63" id="64"/>
+                <outlet property="_topbarBackgroundView" destination="NHd-rY-Vhj" id="FGn-oe-m3g"/>
+                <outlet property="_versionLabel" destination="gTV-kd-OhV" id="Iq8-3z-bKL"/>
+                <outlet property="cameraPreview" destination="60" id="61"/>
+                <outlet property="cameraSwitch" destination="14" id="50"/>
+                <outlet property="cameraView" destination="5" id="tHy-3n-Ebk"/>
+                <outlet property="captureButton" destination="13" id="45"/>
+                <outlet property="flashButton" destination="15" id="49"/>
+                <outlet property="linkLabel" destination="qBd-82-Dzw" id="mwC-Hh-OZe"/>
+                <outlet property="photoLibButton" destination="mvI-Nh-K8v" id="gZL-Yq-ofn"/>
+                <outlet property="remoteButton" destination="53" id="54"/>
+                <outlet property="shutterView" destination="58" id="59"/>
+                <outlet property="timeLabel" destination="47" id="48"/>
+            </connections>
+        </viewController>
+        <view contentMode="scaleToFill" id="114" customClass="DevicePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="popover-background.png" id="115">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="235"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="2" sectionFooterHeight="10" id="116">
+                    <rect key="frame" x="24" y="26" width="254" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="26" id="117"/>
+                        <outlet property="delegate" destination="26" id="118"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HD6-vI-skh">
+                    <rect key="frame" x="38" y="185" width="206" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="GRIP&amp;SHOOT Settings">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGripShootSetting:" destination="26" eventType="touchUpInside" id="igI-mt-BLs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_backgroundView" destination="115" id="123"/>
+                <outlet property="_table" destination="116" id="124"/>
+            </connections>
+        </view>
+        <swipeGestureRecognizer direction="right" id="TMm-l4-Nc5">
+            <connections>
+                <action selector="handleSwipeRightFrom:" destination="26" id="67R-F0-54M"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="Pb7-eo-4Sh">
+            <connections>
+                <action selector="handleSwipeRightFrom:" destination="26" id="ClH-8e-Eak"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <view contentMode="scaleToFill" id="5oQ-jI-D5N">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QeY-bT-HjR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="Vch-Wl-1wi">
+                    <rect key="frame" x="225" y="443" width="66" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n8g-RO-oKE">
+                            <rect key="frame" x="9" y="0.0" width="48" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="gs_logo.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="gs_logo_selected.png"/>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="deviceButtonPressed:" destination="26" eventType="touchUpInside" id="IuS-zU-gui"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BBY-ob-G66">
+                            <rect key="frame" x="0.0" y="56" width="66" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="skip_connection_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tapSkipConnection:" destination="26" eventType="touchUpInside" id="0yE-fY-ULv"/>
+                            </connections>
+                        </button>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Y5S-xE-LlO">
+                            <rect key="frame" x="12" y="2" width="42" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gTV-kd-OhV">
+                            <rect key="frame" x="0.0" y="86" width="66" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Trigger to Connect Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qBd-82-Dzw">
+                    <rect key="frame" x="6" y="258" width="308" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="capture_btn.png" width="56" height="56"/>
+        <image name="capture_btn_selected.png" width="56" height="56"/>
+        <image name="family.png" width="44" height="44"/>
+        <image name="flash_auto.png" width="57" height="57"/>
+        <image name="flash_auto_selected.png" width="57" height="57"/>
+        <image name="geotag_icon.png" width="20" height="28"/>
+        <image name="geotag_icon_selected.png" width="20" height="28"/>
+        <image name="gs_logo.png" width="57" height="57"/>
+        <image name="gs_logo_selected.png" width="57" height="57"/>
+        <image name="photo_mode_selected.png" width="58" height="58"/>
+        <image name="popover-background.png" width="282" height="210"/>
+        <image name="setting_btn.png" width="56" height="56"/>
+        <image name="setting_btn_selected.png" width="56" height="56"/>
+        <image name="skip_connection_btn.png" width="66" height="27"/>
+        <image name="switch_camera_btn.png" width="58" height="42"/>
+        <image name="switch_camera_btn_selected.png" width="58" height="42"/>
+        <image name="video_mode.png" width="57" height="57"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

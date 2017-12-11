@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Photo" >
+        <ListPreference
+			android:title="@string/photo_aspect_ratio"
+			android:entries="@array/image_ar_names"
+			android:entryValues="@array/image_ar_values"
+			android:defaultValue="@string/ar_1_1"
+			android:key="photo_ar" />
+		<!-- CheckBoxPreference
+			android:key="custom_photo_save_path"
+			android:title="@string/custom_photo_save_path"
+			android:defaultValue="false" /-->
+
+        <Preference
+            	android:key="photo_save_path"
+				android:title="@string/photo_save_path"
+				android:selectable="true"
+				android:summary="storage/emulated/0/DCIM/Camera" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Video" >
+        <!-- ListPreference
+			android:title="@string/video_back_profile"
+			android:key="video_back_profile" />
+        <ListPreference
+			android:title="@string/video_front_profile"
+			android:key="video_front_profile" />
+
+		<CheckBoxPreference
+			android:key="custom_video_save_path"
+			android:title="@string/custom_video_save_path"
+			android:defaultValue="false" / -->
+
+        <Preference
+            	android:key="video_save_path"
+				android:title="@string/video_save_path"
+				android:selectable="true"
+				android:summary="storage/emulated/0/DCIM/Camera" />
+    </PreferenceCategory>
+</PreferenceScreen>

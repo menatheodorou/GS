@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popover_background"
+    android:orientation="vertical"
+    android:padding="@dimen/largest_margin"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/tvTapGripID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/tap_grip_id"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/grey" />
+
+    <ListView
+        android:id="@+id/lvDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:dividerHeight="1dp" >
+
+    </ListView>
+
+</LinearLayout>

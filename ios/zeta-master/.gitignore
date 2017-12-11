@@ -1,0 +1,9 @@
+/Schema/*/bundle.properties
+/Schema/*/out
+/Schema/*/imports
+/embedded/*/bundle.properties
+/embedded/*/build
+/embedded/*/*.obj
+/embedded/*/*.hex
+/embedded/*/*.out
+/embedded/*/*.map

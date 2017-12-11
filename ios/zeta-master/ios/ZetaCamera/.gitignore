@@ -1,0 +1,17 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Xcode
+*/build/*
+*.moved-aside
+*.xcuserstate
+*xcdebugger*
+
+Schema/*/bundle.properties
+Schema/*/out
+ZetaCamera.xcodeproj/xcuserdata/*
+DerivedData/*

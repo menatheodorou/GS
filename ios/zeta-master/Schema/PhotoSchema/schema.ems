@@ -1,0 +1,13 @@
+owner = "dmurphy@emmoco.com"
+version = "1.0.0"
+description = "Photo"
+
+uuid = "5294c40c-590b-4232-9fb5-5af4c87a8a45"
+
+schema Photo {
+
+    uint8 buttonPressed {
+        indicator
+    }
+
+}

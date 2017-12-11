@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACBC48A5-FC60-4804-B537-17D801CD1ED5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZetaCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6664a1a3-b837-494e-9f0c-04368c14b365++6913</key>
+		<string>svn://192.168.0.22/svn/team6/outsourcing/active/GRIP&amp;SHOOT</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>code/GS-Camera/ios/zeta-master/ios/ZetaCamera/ZetaCamera.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6664a1a3-b837-494e-9f0c-04368c14b365++6913</key>
+		<string>../../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6664a1a3-b837-494e-9f0c-04368c14b365++6913</key>
+		<string>svn://192.168.0.22/svn/team6/outsourcing</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://192.168.0.22/svn/team6/outsourcing/active/GRIP&amp;SHOOT/code/GS-Camera/ios/zeta-master/ios/ZetaCamera/ZetaCamera.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6664a1a3-b837-494e-9f0c-04368c14b365++6913</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6664a1a3-b837-494e-9f0c-04368c14b365++6913</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GRIP&amp;SHOOT</string>
+		</dict>
+	</array>
+</dict>
+</plist>

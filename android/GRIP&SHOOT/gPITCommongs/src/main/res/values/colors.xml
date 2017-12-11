@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="white">#ffffff</drawable>
+	<color name="transparent">#00000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="grey">#736F6E</color>
+	<color name="darkgrey">#666362</color>
+	<color name="maroon">#800000</color>
+	<color name="lightgray">#736F6E</color>
+	<color name="blue">#770000ff</color>
+	<color name="red">#FF0000</color>
+    <color name="orange">#FF9900</color>
+	
+	<color name="focus_orange"> #636563</color>
+	<color name="darkgreen">#20A447</color>
+</resources>

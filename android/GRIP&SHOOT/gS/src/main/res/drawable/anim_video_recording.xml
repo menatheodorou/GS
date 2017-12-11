@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@+id/anim_video_recording"
+	android:oneshot="true" xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/retina_video_unpressed" android:duration="500" />
+	<item android:drawable="@drawable/recording_retina_unpressed" android:duration="500" />
+</animation-list>

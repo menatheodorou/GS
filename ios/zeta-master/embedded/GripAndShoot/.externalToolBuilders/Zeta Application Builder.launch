@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramBuilderLaunchConfigurationType">
+<stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="${project}"/>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="PATH" value="${eclipse_home}/msptools/bin${system_property:path.separator}${env_var:PATH}"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_BUILD_SCOPE" value="${working_set:&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;resources&gt;&lt;item path=&quot;/GripAndShoot/main.c&quot; type=&quot;1&quot;/&gt;&lt;item path=&quot;/GripAndShoot/main.out&quot; type=&quot;1&quot;/&gt;&lt;item path=&quot;/GripAndShoot/makefile&quot; type=&quot;1&quot;/&gt;&lt;item path=&quot;/GripAndShootSchema/out/GripAndShoot.h&quot; type=&quot;1&quot;/&gt;&lt;item path=&quot;/GripAndShootSchema/schema.ems&quot; type=&quot;1&quot;/&gt;&lt;item path=&quot;/CommonZeta&quot; type=&quot;4&quot;/&gt;&lt;/resources&gt;}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${eclipse_home}/msptools/bin/gmake.exe"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="all COMMON=${project_loc:/CommonZeta}/eap SCHEMA=${project_loc:/GripAndShootSchema}"/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${project_loc}"/>
+</launchConfiguration>

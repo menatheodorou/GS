@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U03-wb-NcA" customClass="GridView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="291"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="raa-yi-9dK">
+                    <rect key="frame" x="14" y="18" width="43" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="OFF">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGrid:" destination="U03-wb-NcA" eventType="touchUpInside" id="bqG-6Y-RaB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yxZ-fV-PBQ">
+                    <rect key="frame" x="14" y="69" width="43" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="grid_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGrid:" destination="U03-wb-NcA" eventType="touchUpInside" id="FfT-Jc-FLG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xNa-Z8-2xd">
+                    <rect key="frame" x="14" y="120" width="43" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="spiral_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGrid:" destination="U03-wb-NcA" eventType="touchUpInside" id="4Ve-q3-I3E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="509-1C-Kpa">
+                    <rect key="frame" x="14" y="171" width="43" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="triangle_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGrid:" destination="U03-wb-NcA" eventType="touchUpInside" id="neI-08-gVW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WNd-ag-EZN">
+                    <rect key="frame" x="14" y="236" width="43" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="grid_rotate_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="grid_rotate_btn_selected"/>
+                    <connections>
+                        <action selector="tapRotate:" destination="U03-wb-NcA" eventType="touchUpInside" id="wBS-h7-yvS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="rotateButton" destination="WNd-ag-EZN" id="fJp-2b-QVP"/>
+                <outlet property="spiralButton" destination="xNa-Z8-2xd" id="TJf-Vb-tUy"/>
+                <outlet property="squareButton" destination="yxZ-fV-PBQ" id="uFH-w8-ePC"/>
+                <outlet property="triangleButton" destination="509-1C-Kpa" id="xQg-lh-SqT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="grid_btn.png" width="56" height="56"/>
+        <image name="grid_rotate_btn.png" width="43" height="47"/>
+        <image name="grid_rotate_btn_selected" width="49" height="61"/>
+        <image name="spiral_btn.png" width="56" height="42"/>
+        <image name="triangle_btn.png" width="56" height="42"/>
+    </resources>
+</document>

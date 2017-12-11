@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@+id/anim_video_recording"
+	android:oneshot="true" xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/ic_camera_shuttter1" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter2" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter3" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter4" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter5" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter6" android:duration="800" />
+	<item android:drawable="@drawable/ic_camera_shuttter5" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter4" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter3" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter2" android:duration="50" />
+	<item android:drawable="@drawable/ic_camera_shuttter1" android:duration="50" />
+    <item android:drawable="@android:color/transparent" android:duration="50" />
+</animation-list>
